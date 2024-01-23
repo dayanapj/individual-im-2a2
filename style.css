@@ -1,0 +1,98 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: mistyrose;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Typography */
+  h1, h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Colors */
+  .highlight {
+    color: #f00;
+  }
+  
+  .success {
+    color: #0f0;
+  }
+  
+  .warning {
+    color: #ff0;
+  }
+  
+  .danger {
+    color: #f00;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    nav {
+      padding: 5px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rosybrown;
+}
+

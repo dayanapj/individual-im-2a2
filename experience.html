@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Experience Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url(pattern3.avif);
+    }
+
+    header {
+      text-align: center;
+      background-color: #F2D7D9;
+      padding: 10px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #8A6D72;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #F2D7D9;
+      display: flex;
+      justify-content: center; /* Center the navigation links horizontally */
+    }
+
+    nav a {
+      display: block;
+      color: #8A6D72;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #D1B2B5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 style="color: #8A6D72;">EXPERIENCE PAGE</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="academic.html">Academic</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2 style="text-align: center; color: #632626;">My Experiences</h2>
+    <p style="text-align: center; color: #8A6D72;">I didn't join a lot of activities but I have memories to create</p>
+  </main>
+    
+<center>
+
+	<div class="w3-content" style="max-width:1000px;margin-top:30px">
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="pentathlon.jpg" style="width:50%; border: 8px dotted; color: #D9A6A1;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="font-family: sans-serif; font-size: 20px; color: #B5525D">TRENGLISH x PENTATHLON 2018</h3>
+      <p style="font-family: cursive; font-size: 20px; color: #632626"><b>"We had the best time ever in English Camp"</b></p>   
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="neonrun.jpg" style="width: 45%; border: 8px dotted; color: #D9A6A1;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="font-family: sans-serif; font-size: 20px; color: #B5525D">NEON RUN x UITMCK</h3>
+      <p style="font-family: cursive; font-size: 20px; color: #632626"><b>"The atmosphere curing the Neon Run was so fun!"</b></p>    
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="roleplay.jpg" style="width: 50%;  border: 8px dotted; color: #D9A6A1;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="font-family: sans-serif; font-size: 20px; color: #B5525D">MANDARIN CLASS - ROLE PLAY LEVEL 1</h3>
+      <p style="font-family: cursive; font-size: 20px; color: #632626"><b>"Thank you, Laoshi! This is our last time meet in Mandarin Class"</b></p>    
+    </div>
+  </div>
+   
+</center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<center>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+     <h2 style="font-family: tahoma; font-size: 50px; color: #AC7088; background-color: #F2D7D9; width: 100%;"><marquee>MEMORIES</marquee></h2>
+    <p style="font-family: tahoma; font-size: 35px; color: #AC7D88"><i>HERE ARE SOME MEMORIES I WENT THROUGH</i></p>
+    <p style="font-family: monospace; font-size: 20px; border: 5px solid ; border-color: #F4BFBF;background-color: palevioletred; color: ghostwhite;">I would like to say thank you to all of you. I am grateful to have such a good time and effort you guys took, to share your thoughts and experiences with me. Thank you for everything. </p>
+ </center>
+
+  <br>
+
+  <br>
+
+  <br>
+
+
+	<footer>
+		<p style="color: darkred;">Copyright © 2023 Dayana Batreisya - All Right Reserved</p>
+	</footer>
+</body>
+</html>
